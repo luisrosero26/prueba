@@ -1,0 +1,24 @@
+completion_text: "<p>Al final del m\xF3dulo 1</p>"
+description: "Descripci\xF3n del M\xF3dulo 1"
+next_flow_id: quiz14
+next_flow_title: Prueba lo que aprendiste
+pages:
+- content: "<p>Contenido del m\xF3dulo 1</p>"
+  id: intro
+  title: Inicio
+  type: Page
+- content: |-
+    <p>Este es el contenido 1</p>
+  id: page35
+  title: "Contenido 1 del m\xF3dulo 1"
+  type: Page
+rules:
+  access:
+  - if_has_role:
+    - ta
+    - student
+    - instructor
+    permissions:
+    - view
+  grade_identifier: null
+title: "M\xF3dulo 1"
